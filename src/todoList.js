@@ -19,7 +19,7 @@
 
 /**
  * Create todolist
- * @function createTodo
+ * @function
  * @param {string} id - user ID
  * @param {string} content - content of To do
  * @param {string} category - type of To do
@@ -30,24 +30,24 @@ const createTodo = (id, content, category, tags) => {};
 
 /**
  * Read all todolist
- * @function getTodoListAll
+ * @function
  * @returns {Array} Searched to do list
  */
-const getTodoListAll = () => {};
+const getAllTodo = () => {};
 
 /**
- * Read all todolist or todolist based on the id
- * @function getTodoListById
+ * Read todolist based on the id
+ * @function
  * @param {string} id - user ID
  * @param {string} keyword - word to search
  * @returns {Array} Searched to do list
  */
-const getTodoListById = (id, keyword) => {};
+const getTodoById = (id, keyword) => {};
 
 /**
  * Update todolist.
  * If id is not empty, Call 'getTodoListById' function and Modify a specific tag of a specific task.
- * @function updateTodo
+ * @function
  * @param {string} id - user ID
  * @param {string|boolean|Array} target - what to update(Only content, isDone, category, tags)
  * @param {string|boolean} toBe - content to update
@@ -57,7 +57,35 @@ const updateTodo = (id, target, toBe) => {};
 
 /**
  * Delete all todolist
- * @function deleteTodoAll
- * @returns {Array} Searched to do list
+ * @function
+ * @returns {Array} empty list
  */
-const deleteTodoAll = () => {};
+const deleteAllTodo = () => {};
+
+/**
+ * Delete todolist based on the id
+ * @function
+ * @param {string} id - user ID
+ * @param {string} keyword - word to delete
+ * @returns {Array} deleted to do list
+ */
+const deleteTodoById = (id, keyword) => {};
+
+/**
+ * Delete specific tag of todolist based on the id
+ * @function
+ * @param {string} id - user ID
+ * @param {string} keyword - word to delete
+ * @param {Array} tag - tag to delete
+ * @returns {Array} deleted to do list
+ */
+const deleteTagById = (id, keyword) => {};
+
+/**
+ * Delete all tags of todolist based on the id
+ * @function
+ * @param {string} id - user ID
+ * @param {string} keyword - word to delete
+ * @returns {Array} deleted to do list
+ */
+const deleteAllTagsById = (id, keyword) => {};
