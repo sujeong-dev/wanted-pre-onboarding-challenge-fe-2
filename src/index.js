@@ -33,7 +33,7 @@ const createTodo = (id, content, isDone = false, category, tags = []) => {};
  * Read todolist
  * @function
  * @param {string} id - 유저 id
- * @returns {string[]} Searched to do list
+ * @returns {object[]} 여러 todo객체의 배열형태
  */
 const getTodo = (id) => {};
 
