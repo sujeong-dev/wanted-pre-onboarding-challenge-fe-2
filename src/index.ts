@@ -18,21 +18,15 @@ interface todoitem {
 }
 
 interface createTodo {
-  (
-    id: string,
-    content: string,
-    isDone: boolean,
-    category: string,
-    tags?: string[]
-  ): void;
+  (todo: todoitem): void;
 }
 
 interface getTodo {
-  (id: string): object[];
+  (id: string): todoitem;
 }
 
 interface updateTodo {
-  (id: string, content: string, isDone: boolean, tags?: string[]): void;
+  (todo: todoitem): void;
 }
 
 interface deleteTodo {
